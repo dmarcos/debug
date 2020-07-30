@@ -169,7 +169,6 @@ function formatArgs(args) {
 		const prefix = `  ${colorCode};1m${name} \u001B[0m`;
 
 		args[0] = prefix + args[0].split('\n').join('\n' + prefix);
-		args.push(colorCode + 'm+' + module.exports.humanize(this.diff) + '\u001B[0m');
 	} else {
 		args[0] = getDate() + name + ' ' + args[0];
 	}

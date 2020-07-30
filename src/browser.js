@@ -138,8 +138,7 @@ function formatArgs(args) {
 		this.namespace +
 		(this.useColors ? ' %c' : ' ') +
 		args[0] +
-		(this.useColors ? '%c ' : ' ') +
-		'+' + module.exports.humanize(this.diff);
+		(this.useColors ? '%c ' : ' ');
 
 	if (!this.useColors) {
 		return;
